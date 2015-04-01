@@ -129,9 +129,9 @@
 		return nil;
 
 	/// Image quality
-	CGContextSetShouldAntialias(bmContext, true);
-	CGContextSetAllowsAntialiasing(bmContext, true);
-	CGContextSetInterpolationQuality(bmContext, kCGInterpolationHigh);
+	CGContextSetShouldAntialias(bmContext, false);
+	CGContextSetAllowsAntialiasing(bmContext, false);
+	CGContextSetInterpolationQuality(bmContext, kCGInterpolationNone);
 
 	/// Draw the image in the bitmap context
 
